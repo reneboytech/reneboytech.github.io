@@ -58,7 +58,6 @@ Extra @Media Query
 }
 
 /* ================== Desktop Main Menu CSS ================== */
-
 .ellipsis-1 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -89,7 +88,7 @@ Extra @Media Query
   margin: 0;
 }
 
-.desktoplogo img {  
+.desktoplogo img {
   width: 100%
 }
 
@@ -116,7 +115,7 @@ Extra @Media Query
 
 .wsmenu>.wsmenu-list>li>a {
   display: block;
-  padding: 1.96rem  .5rem;
+  padding: 1.96rem .5rem;
   text-decoration: none;
   position: relative;
   color: #fff;
@@ -1253,26 +1252,29 @@ Extra @Media Query
 }
 
 /* customize by kataps 20200608*/
+@media only screen and (max-width:1390px) {
+  .nav-content {
+    justify-content: space-between;
+    /*reserba lang to kung papalitan nila ung sa small laptop*/
+  }
 
-@media only screen and (max-width:1390px){  
-    .nav-content{
-        justify-content: space-between ; /*reserba lang to kung papalitan nila ung sa small laptop*/
-    }
-    .nav-content img{
-       max-width: 600px;
-    }
-}
-@media only screen and (min-width:1391px){
-  .nav-content{
-      justify-content:  space-between !important;
-    
-  }
-  .nav-content img{
-    width:699px !important;
+  .nav-content img {
+    max-width: 600px;
   }
 }
-@media only screen and(max-width:1321px){
-   .nav-content{
-      justify-content: center !important;
-   }
+
+@media only screen and (min-width:1391px) {
+  .nav-content {
+    justify-content: space-between !important;
+  }
+
+  .nav-content img {
+    width: 699px !important;
+  }
+}
+
+@media only screen and(max-width:1321px) {
+  .nav-content {
+    justify-content: center !important;
+  }
 }
